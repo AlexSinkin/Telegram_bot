@@ -40,7 +40,7 @@ class item:
 class Shortsword(item):
     def __init__(self, name):
         self._attack = 0
-        self._image = '/uti/Shortsword.jpg'
+        self._image = 'uty\Shortsword.jpg'
         self._health = 0
         self._defence = 0
         self._dexterity = 0
@@ -82,6 +82,7 @@ class Normal_unit:
 
 class Bandit(Normal_unit):
     def __init__(self):
+        self._image = 'Bandit.jpg'
         self._health = 11
         self._defence = 12
         self._name = 'Bandit'
@@ -106,11 +107,12 @@ class Bandit(Normal_unit):
 
 class Blood_hawk(Normal_unit):
     def __init__(self):
+        self._image = 'Blood_hawk.jpeg'
         self._health = 7
         self._defence = 12
         self._name = 'Blood Hawk'
         self._exp = 25
-        self._race = 'Humanoid'
+        self._race = 'Animal'
         self._speed = 10
         self._dexterity = 14
         self._strength = 6
